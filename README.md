@@ -114,6 +114,9 @@ Requirements
     sudo rm /etc/systemd/system/zgs.service
     rm -rf $HOME/0g-storage-node
     ```
-   
+#UPDATE 0G Storage V3 using one line code
+```
+wget https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/storage_node_update_v3.sh
+```
 
 
