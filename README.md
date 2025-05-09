@@ -114,9 +114,14 @@ Requirements
     sudo rm /etc/systemd/system/zgs.service
     rm -rf $HOME/0g-storage-node
     ```
+
+OR You Can Running 0G Storage V3 using one line code
+```
+wget https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/0g_storage_node_v3.sh && chmod +x 0g_storage_node_v3.sh && ./0g_storage_node_v3.sh
+```
 #UPDATE 0G Storage V3 using one line code
 ```
-wget https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/storage_node_update_v3.sh
+wget https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/storage_node_update_v3.sh && chmod +x storage_node_update_v3.sh && ./storage_node_update_v3.sh
 ```
 
 
