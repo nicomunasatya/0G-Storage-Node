@@ -123,6 +123,10 @@ Requirements
     sudo rm /etc/systemd/system/zgs.service
     rm -rf $HOME/0g-storage-node
     ```
+13. Check Block and Sync 0G
+    ```
+    bash <(curl -s https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/check_block.sh)
+    ```
 
 OR You Can Running 0G Storage V3 using one line code
 ```
