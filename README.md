@@ -88,20 +88,29 @@ Requirements
     ```
     tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
     ```
+    ![Full Log](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/Check%20full%20log.png)
     
     tx_seq log:
     ```
     tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d) | grep tx_seq
     ```
+    ![tx_seq log](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/Tx_seq%20log.png)
     
     Monitoring 0g-storage-node Logs without Network and Peer Messages:
     ```
     tail -f ~/0g-storage-node/run/log/zgs.log.$(date +%Y-%m-%d) | grep -v "discv5\|network\|router\|Peer"
     ```
+    ![Monitoring 0g-storage-node Logs without Network and Peer Messages](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/Tx_seq%20log.png)
     
     logSync & Peers through RPC:
     ```
-    tail -f ~/0g-storage-node/run/log/zgs.log.$(date +%Y-%m-%d) | grep -v "discv5\|network\|router\|Peer"
+    while true; do
+        response=$(curl -s -X POST http://localhost:5678 -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"zgs_getStatus","params":[],"id":1}')
+        logSyncHeight=$(echo $response | jq '.result.logSyncHeight')
+        connectedPeers=$(echo $response | jq '.result.connectedPeers')
+        echo -e "logSyncHeight: \033[32m$logSyncHeight\033[0m, connectedPeers: \033[34m$connectedPeers\033[0m"
+        sleep 5;
+    done
     ```
     ![Log Sync & Peers](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/logSync%20%26%20Peers%20through%20RPC.png)
     
