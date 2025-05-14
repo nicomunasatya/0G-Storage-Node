@@ -127,6 +127,7 @@ Requirements
     ```
     bash <(curl -s https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/check_block.sh)
     ```
+    ![Check Block and Sync](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/Check%20Block%20and%20Sync.png)
 
 OR You Can Running 0G Storage V3 using one line code
 ```
