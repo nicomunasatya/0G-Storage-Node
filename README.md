@@ -1,12 +1,13 @@
 # 0G-Storage-Node
-Running 0G storage v3 node using VPS
+Running 0G V3 Storage Node using VPS
 
-Requirements
+## Requirements
 - Memory: 32 GB RAM
 - CPU: 8 Cores
 - Disk: 500GB / 1TB NVME SSD
 - Bandwidth: 100 Mbps (Download / Upload)
 
+## Steps to install 0G V3 Storgae Node
 1. Install dependencies for building from source
     ```
     sudo apt-get update
@@ -129,11 +130,11 @@ Requirements
     ```
     ![Check Block and Sync](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/Check%20Block%20and%20Sync.png)
 
-OR You Can Running 0G Storage V3 using one line code
+## You Can Running 0G Storage V3 using one line code
 ```
 wget https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/0g_storage_node_v3.sh && chmod +x 0g_storage_node_v3.sh && ./0g_storage_node_v3.sh
 ```
-#UPDATE 0G Storage V3 using one line code
+## UPDATE 0G Storage V3 using one line code
 ```
 wget https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/storage_node_update_v3.sh && chmod +x storage_node_update_v3.sh && ./storage_node_update_v3.sh
 ```
