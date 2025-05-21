@@ -89,19 +89,19 @@ Running 0G V3 Storage Node using VPS
     ```
     tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
     ```
-    ![Full Log](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/Check%20full%20log.png)
+    ![Full Log](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/img/Check%20full%20log.png)
     
     tx_seq log:
     ```
     tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d) | grep tx_seq
     ```
-    ![tx_seq log](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/Tx_seq%20log.png)
+    ![tx_seq log](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/img/Tx_seq%20log.png)
     
     Monitoring 0g-storage-node Logs without Network and Peer Messages:
     ```
     tail -f ~/0g-storage-node/run/log/zgs.log.$(date +%Y-%m-%d) | grep -v "discv5\|network\|router\|Peer"
     ```
-    ![Monitoring 0g-storage-node Logs without Network and Peer Messages](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/Tx_seq%20log.png)
+    ![Monitoring 0g-storage-node Logs without Network and Peer Messages](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/img/Tx_seq%20log.png)
     
     logSync & Peers through RPC:
     ```
@@ -113,7 +113,7 @@ Running 0G V3 Storage Node using VPS
         sleep 5;
     done
     ```
-    ![Log Sync & Peers](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/logSync%20%26%20Peers%20through%20RPC.png)
+    ![Log Sync & Peers](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/img/logSync%20%26%20Peers%20through%20RPC.png)
     
 12. Stop & Delete node
     ```
@@ -128,7 +128,7 @@ Running 0G V3 Storage Node using VPS
     ```
     bash <(curl -s https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/check_block.sh)
     ```
-    ![Check Block and Sync](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/Check%20Block%20and%20Sync.png)
+    ![Check Block and Sync](https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/img/Check%20Block%20and%20Sync.png)
 
 ## You Can Running 0G Storage V3 using one line code
 ```
