@@ -44,9 +44,9 @@ Running 0G V3 Storage Node using VPS
     ```
 5. Config:
    You can download my sample config
-   https://github.com/nicomunasatya/0G-Storage-Node/blob/main/config-testnet-turbo.toml
+   https://github.com/nicomunasatya/0G-Storage-Node/blob/main/config.toml
     ```
-    wget -O $HOME/0g-storage-node/run/config-testnet-turbo.toml https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/config-testnet-turbo.toml
+    wget -O $HOME/0g-storage-node/run/config-testnet-turbo.toml https://raw.githubusercontent.com/nicomunasatya/0G-Storage-Node/main/config.toml
     ```
 6. Set your miner key:
    Define varible The input will be hidden from the screen for security
