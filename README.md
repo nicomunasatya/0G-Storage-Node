@@ -41,6 +41,7 @@ Running 0G V3 Storage Node using VPS
     cd 0g-storage-node
     git checkout v0.8.4
     git submodule update --init
+    cargo build --release
     ```
 5. Config:
    You can download my sample config
